@@ -18,10 +18,15 @@ public class Poin3D extends Point2D {
         this.z = z;
     }public float []getXYZ(){
         float []array = new  float[3];
-        array[0] = x;
-        array[1] = y;
-        array[2] = z;
+        array[0] = this.x;
+        array[1] = this.y;
+        array[2] = this.z;
         return array;
+    }
+    public void  show(float []arr){
+        for (float e:arr){
+            System.out.println(e);
+        }
     }
     @Override
     public String toString(){
